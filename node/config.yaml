@@ -1,0 +1,10 @@
+database:
+  database: postgres
+  host: db
+  port: 5432
+  user: postgres
+  password: postgres
+
+api:
+  port: 8081
+  hostname: 0.0.0.0

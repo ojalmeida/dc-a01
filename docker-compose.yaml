@@ -1,0 +1,42 @@
+version: "3"
+services:
+  go-api:
+    container_name: go-api
+    image: go-api
+    build:
+      context: ./go
+    depends_on:
+      - db
+    ports:
+      - "8082:8082"
+
+  node-api:
+    container_name: node-api
+    image: node-api
+    build:
+      context: ./node
+    depends_on:
+      - db
+    ports:
+      - "8081:8081"
+
+  db:
+    container_name: db
+    image: db
+    environment:
+      POSTGRES_PASSWORD: postgres
+    build:
+      context: ./db
+    expose:
+      - "5432"
+
+  gui:
+    container_name: gui
+    image: gui
+    build:
+      context: ./gui
+    ports:
+      - "8080:80"
+    depends_on:
+      - node-api
+      - go-api
