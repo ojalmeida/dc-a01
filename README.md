@@ -25,6 +25,11 @@ docker compose up -d
 ```bash
 docker compose ps
 ```
+4. Access [GUI](http://localhost:8080)
+
+```bash
+xdg-open http://localhost:8080
+```
 
 # Services
 
