@@ -44,7 +44,7 @@ The database service was built over postgresql alpine-based image from oficial r
 
 ## GUI
 
-The `Graphic User Interface`, followed by the Node.js API were the hardest parts due to the my lack of experience with front-end and Javascript
+The `Graphic User Interface`, were the 2nd hardest part, due to the my lack of experience with front-end and Javascript
 
 The webpage was firstly sketched in Figma platform (`gui/draft.png`), what helped a lot in the development.
 
