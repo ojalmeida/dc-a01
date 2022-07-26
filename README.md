@@ -15,18 +15,12 @@ Tying up, each step of the proficiency test was placed in a container applicatio
 git clone https://github.com/ojalmeida/dc-a01 && cd dc-a01
 ```
 
-2. Make sure that docker-compose is installed
-
-```bash
-docker-compose -v
-```
-
-3. Start services
+2. Start services
 
 ```bash
 docker compose up -d
 ```
-4. Check services
+3. Check services
 
 ```bash
 docker compose ps
